@@ -2,9 +2,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.ImmutableList;
 
+
 public class Input {
 
     private ImmutableList<Integer> numbers;
+
+    public Input(){
+        numbers = ImmutableList.of();
+    }
 
     @VisibleForTesting
     protected Input(Integer... values) {
